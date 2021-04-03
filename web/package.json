@@ -1,0 +1,7 @@
+{
+  "name": "view-timeago/web",
+  "private": true,
+  "main": "../dist/src/web.js",
+  "jsnext:main": "../dist/src/web.js",
+  "module": "../dist/src/web.js"
+}
