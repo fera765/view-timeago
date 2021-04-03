@@ -2,7 +2,7 @@
   <!-- <a href="https://nativetimeago.netlify.com">Demo</a> -->
 </div>
 
-<h1 align="center">Native Timeago</h1>
+<h1 align="center">View Timeago</h1>
 
 <p align="center">
   <img alt="Principal linguagem do projeto" src="https://img.shields.io/github/languages/top/fera765/view-timeago?color=56BEB8">
@@ -23,7 +23,7 @@
 <!-- Status -->
 
 <!-- <h4 align="center"> 
-	🚧  Native Timeago 🚀 Em construção...  🚧
+	🚧  View Timeago 🚀 Em construção...  🚧
 </h4> 
 
 <hr> -->
