@@ -100,6 +100,60 @@ const App = () => {
 }
 ```
 
+Example 01 Web
+```js
+import TimeAgo from 'view-timeago/web';
+
+const App = () => {
+  const date = new Date();
+  return (
+    <div>
+      <TimeAgo date={date} language="pt-BR">
+      //By default it updates every 1 minute
+    </div>
+  )
+}
+```
+
+Example 02 Web
+```js
+import TimeAgo from 'view-timeago/web';
+
+const App = () => {
+  const date = new Date();
+  return (
+    <div>
+      <TimeAgo date={date} interval={1000} language="pt-BR" style={{fontSize: 20}}>
+      //Updates every 1 second
+    </div>
+  )
+}
+```
+
+Example 03 Styled-Components Web
+```js
+//styled.ts
+import styled from 'styled-components';
+import TimeAgo from 'view-timeago/web';
+
+export const TimeAgoText = styled(TimeAgo)`
+  font-size: 20px;
+`;
+
+// App.tsx
+import { TimeAgoText } from './styles';
+
+const App = () => {
+  const date = new Date();
+  return (
+    <div>
+      <TimeAgoText date={date} interval={1000} language="pt-BR" style={{fontSize: 20}}>
+      //Updates every 1 second
+    </div>
+  )
+}
+```
+
 ## :rocket: Tecnologias ##
 
 The following tools were used in the construction of the project:

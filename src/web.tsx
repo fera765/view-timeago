@@ -81,7 +81,7 @@ const TimeAgo = ({
     } ${translate.ago}`;
   }
 
-  const date = convertDateUTC(new Date(time));
+  const date = convertDateUTC(time as Date);
 
   useInterval(() => {
     setUpdate(update + 1);
