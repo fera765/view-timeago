@@ -40,6 +40,8 @@
 ## :sparkles: Functionalities ##
 
 :heavy_check_mark: Convert Date to TimeAgo;
+:heavy_check_mark: Until now support the following languages
+'pt-BR', 'en-US';
 
 ## :star: Example ##
 

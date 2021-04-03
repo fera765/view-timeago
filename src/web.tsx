@@ -45,7 +45,7 @@ const TimeAgo = ({
     return newDate;
   }
 
-  function convertDateToTimeAgo(stringDate: Date | string) {
+  function convertDateToTimeAgo(stringDate: Date) {
     if (typeof stringDate !== 'object') {
       stringDate = new Date(stringDate);
     }
@@ -81,13 +81,13 @@ const TimeAgo = ({
     } ${translate.ago}`;
   }
 
-  const date = convertDateUTC(time as Date);
+  const date = convertDateUTC(new Date(time));
 
   useInterval(() => {
     setUpdate(update + 1);
   }, interval);
 
-  return <div style={style}>{convertDateToTimeAgo(date.toUTCString())}</div>;
+  return <div style={style}>{convertDateToTimeAgo(date)}</div>;
 };
 
 export default React.memo(TimeAgo);
