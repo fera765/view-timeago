@@ -45,12 +45,12 @@ const TimeAgo = ({
     return newDate;
   }
 
-  function convertDateToTimeAgo(stringDate: Date) {
+  function convertDateToTimeAgo(stringDate: Date | string) {
     if (typeof stringDate !== 'object') {
       stringDate = new Date(stringDate);
     }
 
-    const sec = Math.floor((new Date().getTime() - Number(stringDate.toUTCString())) / 1000);
+    const sec = Math.floor((new Date().getTime() - Number(stringDate)) / 1000);
 
     if (sec < 60) return translate.now;
     const min = sec / 60;
@@ -87,7 +87,7 @@ const TimeAgo = ({
     setUpdate(update + 1);
   }, interval);
 
-  return <div style={style}>{convertDateToTimeAgo(date)}</div>;
+  return <div style={style}>{convertDateToTimeAgo(date.toUTCString())}</div>;
 };
 
 export default React.memo(TimeAgo);
